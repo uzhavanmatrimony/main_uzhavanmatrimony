@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="ta" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>உழவன் MATRIMONY - விவசாயக் குடும்பங்களுக்கான திருமணத் தகவல் மையம்</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Tamil (Noto Sans Tamil & Mukta Malar) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandGreen: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#114227',
+                            dark: '#0a301b',
+                        },
+                        brandGold: {
+                            light: '#fde047',
+                            DEFAULT: '#d4af37',
+                            dark: '#b48811',
+                            accent: '#f59e0b',
+                        },
+                        creamBg: '#fbf9f4'
+                    },
+                    fontFamily: {
+                        tamil: ['"Mukta Malar"', '"Noto Sans Tamil"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Mukta Malar', 'Noto Sans Tamil', sans-serif;
+            background-color: #fbf9f4;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(13, 92, 47, 0.95) 0%, rgba(17, 66, 39, 0.85) 100%), 
+                        url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&q=80&w=1600') center/cover;
+        }
+        .gold-border-gradient {
+            border-image: linear-gradient(to right, #d4af37, #f59e0b, #d4af37) 1;
+        }
+        .text-gold-shadow {
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased selection:bg-brandGold selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-brandGreen-dark text-amber-200 text-xs sm:text-sm py-2 px-4 text-center border-b border-brandGold/30 flex justify-between items-center px-4 md:px-12">
+        <div class="flex items-center gap-2 mx-auto sm:mx-0">
+            <span class="bg-brandGold text-brandGreen-dark font-bold px-2 py-0.5 rounded-full text-xs">சிறப்புச் சலுகை</span>
+            <span>விவசாயக் குடும்பங்களுக்கு முன்பதிவு முற்றிலும் இலவசம்!</span>
+        </div>
+        <div class="hidden sm:flex items-center gap-6 text-xs text-amber-100">
+            <span><i class="fa-solid fa-phone text-brandGold mr-1"></i> உதவிக்கு: +91 98765 43210</span>
+            <span><i class="fa-solid fa-location-dot text-brandGold mr-1"></i> ஈரோடு, தமிழ்நாடு</span>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-md border-b-2 border-brandGold/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- BRAND LOGO -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="relative w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-brandGreen-800 to-brandGreen-dark rounded-full flex items-center justify-center p-1 border-2 border-brandGold shadow-md transform group-hover:scale-105 transition-all">
+                        <!-- SVG Agricultural & Couple Icon -->
+                        <svg viewBox="0 0 100 100" class="w-full h-full fill-current text-brandGold">
+                            <!-- Paddy Stalks Left -->
+                            <path d="M 20 85 C 15 60 25 30 45 15 C 35 30 30 50 35 85 Z" fill="#d4af37" />
+                            <!-- Paddy Stalks Right -->
+                            <path d="M 80 85 C 85 60 75 30 55 15 C 65 30 70 50 65 85 Z" fill="#d4af37" />
+                            <!-- Couple Silhouette Concept -->
+                            <circle cx="42" cy="40" r="8" fill="#ffffff" />
+                            <circle cx="58" cy="43" r="7" fill="#fde047" />
+                            <path d="M 32 75 C 32 55 52 55 52 75 Z" fill="#ffffff" />
+                            <path d="M 48 75 C 48 58 68 58 68 75 Z" fill="#fde047" />
+                            <path d="M 10 80 Q 50 95 90 80 Q 50 85 10 80" fill="#22c55e"/>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-1">
+                            <span class="text-2xl sm:text-3xl font-extrabold text-brandGreen-900 tracking-tight leading-none">உழவன்</span>
+                            <span class="text-xs bg-brandGold/20 text-brandGreen-800 px-1.5 py-0.5 rounded font-bold border border-brandGold/40">தமிழ்</span>
+                        </div>
+                        <span class="text-xs tracking-widest text-brandGold-dark font-bold uppercase mt-0.5">MATRIMONY</span>
+                    </div>
+                </a>
+
+                <!-- DESKTOP MENU -->
+                <nav class="hidden lg:flex items-center space-x-8 text-base font-semibold text-gray-700">
+                    <a href="#home" class="text-brandGreen-800 hover:text-brandGold transition-colors border-b-2 border-brandGold pb-1">முகப்பு</a>
+                    <a href="#search" class="hover:text-brandGreen-800 transition-colors">வரன் தேடுக</a>
+                    <a href="#why-us" class="hover:text-brandGreen-800 transition-colors">சிறப்பம்சங்கள்</a>
+                    <a href="#success-stories" class="hover:text-brandGreen-800 transition-colors">வெற்றி கதைகள்</a>
+                    <a href="#pricing" class="hover:text-brandGreen-800 transition-colors">கட்டண திட்டம்</a>
+                    <a href="#contact" class="hover:text-brandGreen-800 transition-colors">தொடர்புக்கு</a>
+                </nav>
+
+                <!-- ACTION BUTTONS -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <button onclick="toggleModal('loginModal')" class="px-4 py-2 border-2 border-brandGreen-800 text-brandGreen-800 hover:bg-brandGreen-50 rounded-lg font-bold text-sm transition-all">
+                        <i class="fa-solid fa-right-to-bracket mr-1.5"></i>உள்நுழைக
+                    </button>
+                    <button onclick="toggleModal('registerModal')" class="px-5 py-2.5 bg-gradient-to-r from-brandGold to-amber-500 hover:from-amber-500 hover:to-brandGold text-brandGreen-900 font-extrabold rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all text-sm">
+                        <i class="fa-solid fa-user-plus mr-1.5"></i>இலவச பதிவு
+                    </button>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-brandGreen-900 text-2xl focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+            <a href="#home" class="block py-2 text-brandGreen-800 font-bold border-l-4 border-brandGold pl-3">முகப்பு</a>
+            <a href="#search" class="block py-2 text-gray-700 hover:text-brandGreen-800 pl-3">வரன் தேடுக</a>
+            <a href="#why-us" class="block py-2 text-gray-700 hover:text-brandGreen-800 pl-3">சிறப்பம்சங்கள்</a>
+            <a href="#success-stories" class="block py-2 text-gray-700 hover:text-brandGreen-800 pl-3">வெற்றி கதைகள்</a>
+            <a href="#pricing" class="block py-2 text-gray-700 hover:text-brandGreen-800 pl-3">கட்டண திட்டம்</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-brandGreen-800 pl-3">தொடர்புக்கு</a>
+            <div class="pt-4 flex flex-col gap-2">
+                <button onclick="toggleModal('loginModal')" class="w-full py-2.5 border-2 border-brandGreen-800 text-brandGreen-800 rounded-lg font-bold text-center">உள்நுழைக</button>
+                <button onclick="toggleModal('registerModal')" class="w-full py-2.5 bg-brandGold text-brandGreen-900 font-bold rounded-lg text-center shadow">இலவச பதிவு</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative hero-gradient text-white py-16 lg:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- HERO TEXT CONTENT -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-amber-400/20 border border-amber-300/40 text-amber-200 px-4 py-1.5 rounded-full text-sm font-semibold backdrop-blur-sm">
+                        <i class="fa-solid fa-wheat-awn text-brandGold"></i>
+                        <span>விவசாய பெருமக்களின் முதல் தேர்வு</span>
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
+                        விவசாயக் குடும்பங்களுக்கும் <br class="hidden sm:inline"/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-brandGold to-yellow-100">நல் உள்ளங்களுக்கும்</span> ஏற்ற உன்னத மையம்!
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-emerald-100 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        உங்கள் குடும்ப மரபு, கலாச்சாரம் மற்றும் நன்மதிப்பிற்கு ஏற்ற வாழ்க்கைத் துணையை உழவன் மேட்ரிமனி மூலம் மிக எளிதாகவும் பாதுகாப்பாகவும் கண்டறியுங்கள்.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-6 text-sm font-medium text-emerald-100">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-brandGold text-lg"></i>
+                            <span>100% சரிபார்க்கப்பட்ட வரன்கள்</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-brandGold text-lg"></i>
+                            <span>நம்பகமான வாடிக்கையாளர் சேவை</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QUICK SEARCH CARD FORM -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white/95 backdrop-blur-md rounded-2xl p-6 sm:p-8 shadow-2xl border-4 border-brandGold/40 text-gray-800">
+                        <div class="text-center mb-6">
+                            <h2 class="text-2xl font-bold text-brandGreen-900 flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-magnifying-glass text-brandGold"></i>
+                                விரைவு வரன் தேடல்
+                            </h2>
+                            <p class="text-xs text-gray-500 mt-1">உங்களுக்குப் பொருத்தமான வரனை உடனே கண்டறியுங்கள்</p>
+                        </div>
+
+                        <form id="heroSearchForm" onsubmit="handleHeroSearch(event)" class="space-y-4">
+                            <!-- Looking for -->
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">நான் தேடுவது</label>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <label class="flex items-center justify-center p-3 border-2 border-gray-200 rounded-lg cursor-pointer transition-all hover:border-brandGreen-700 has-[:checked]:border-brandGreen-800 has-[:checked]:bg-brandGreen-50">
+                                        <input type="radio" name="searchGender" value="groom" class="sr-only" checked>
+                                        <span class="font-bold text-brandGreen-900 text-sm"><i class="fa-solid fa-mars mr-1.5 text-blue-600"></i>மணமகன்</span>
+                                    </label>
+                                    <label class="flex items-center justify-center p-3 border-2 border-gray-200 rounded-lg cursor-pointer transition-all hover:border-brandGreen-700 has-[:checked]:border-brandGreen-800 has-[:checked]:bg-brandGreen-50">
+                                        <input type="radio" name="searchGender" value="bride" class="sr-only">
+                                        <span class="font-bold text-brandGreen-900 text-sm"><i class="fa-solid fa-venus mr-1.5 text-pink-600"></i>மணமகள்</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Age Range -->
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">குறைந்த வயது</label>
+                                    <select id="minAge" class="w-full bg-gray-50 border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-brandGreen-800 outline-none">
+                                        <option value="18">18 வயது</option>
+                                        <option value="21" selected>21 வயது</option>
+                                        <option value="25">25 வயது</option>
+                                        <option value="28">28 வயது</option>
+                                        <option value="30">30 வயது</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">அதிகபட்ச வயது</label>
+                                    <select id="maxAge" class="w-full bg-gray-50 border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-brandGreen-800 outline-none">
+                                        <option value="25">25 வயது</option>
+                                        <option value="30" selected>30 வயது</option>
+                                        <option value="35">35 வயது</option>
+                                        <option value="40">40+ வயது</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- District / Location -->
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">மாவட்டம்</label>
+                                <select id="searchDistrict" class="w-full bg-gray-50 border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-brandGreen-800 outline-none">
+                                    <option value="all">அனைத்து மாவட்டங்கள்</option>
+                                    <option value="ஈரோடு">ஈரோடு</option>
+                                    <option value="கோவை">கோயம்புத்தூர்</option>
+                                    <option value="சேலம்">சேலம்</option>
+                                    <option value="திருப்பூர்">திருப்பூர்</option>
+                                    <option value="நாமக்கல்">நாமக்கல்</option>
+                                    <option value="மதுரை">மதுரை</option>
+                                    <option value="திருச்சி">திருச்சி</option>
+                                </select>
+                            </div>
+
+                            <!-- Agricultural Background Checkbox -->
+                            <div class="flex items-center gap-2 pt-1">
+                                <input type="checkbox" id="agriOnly" class="w-4 h-4 text-brandGreen-800 accent-brandGreen-800 rounded">
+                                <label for="agriOnly" class="text-xs font-semibold text-gray-700 cursor-pointer">விவசாயப் பின்னணி கொண்ட குடும்பங்கள் மட்டும்</label>
+                            </div>
+
+                            <button type="submit" class="w-full bg-gradient-to-r from-brandGreen-800 to-brandGreen-dark hover:from-brandGreen-900 hover:to-black text-amber-300 font-extrabold py-3.5 rounded-lg shadow-lg hover:shadow-xl transition-all text-base tracking-wide flex items-center justify-center gap-2 border border-brandGold/40 mt-2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                வரன்களைத் தேடுக
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COUNTER / STATS BAR -->
+    <div class="bg-gradient-to-r from-brandGreen-900 via-brandGreen-800 to-brandGreen-dark py-8 border-y-4 border-brandGold">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+            <div class="p-2">
+                <p class="text-3xl sm:text-4xl font-extrabold text-brandGold">15,000+</p>
+                <p class="text-xs sm:text-sm text-emerald-100 mt-1 font-medium">பதிவு செய்த வரன்கள்</p>
+            </div>
+            <div class="p-2">
+                <p class="text-3xl sm:text-4xl font-extrabold text-brandGold">4,800+</p>
+                <p class="text-xs sm:text-sm text-emerald-100 mt-1 font-medium">சுப முகூர்த்த திருமணங்கள்</p>
+            </div>
+            <div class="p-2">
+                <p class="text-3xl sm:text-4xl font-extrabold text-brandGold">100%</p>
+                <p class="text-xs sm:text-sm text-emerald-100 mt-1 font-medium">சரிபார்க்கப்பட்ட கணக்குகள்</p>
+            </div>
+            <div class="p-2">
+                <p class="text-3xl sm:text-4xl font-extrabold text-brandGold">38</p>
+                <p class="text-xs sm:text-sm text-emerald-100 mt-1 font-medium">தமிழ்நாடு மாவட்டங்கள்</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURED PROFILES SECTION -->
+    <section id="search" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-10">
+            <h2 class="text-3xl font-extrabold text-brandGreen-900 sm:text-4xl">சிறந்த திருமண வரன்கள்</h2>
+            <div class="w-24 h-1 bg-brandGold mx-auto my-3 rounded-full"></div>
+            <p class="text-gray-600">உங்களின் எதிர்பார்ப்புகளுக்கு ஏற்ப தேர்ந்தெடுக்கப்பட்ட சுயவிவரங்களை பார்வையிடுங்கள்</p>
+        </div>
+
+        <!-- FILTER TABS -->
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-10">
+            <button onclick="filterProfiles('all')" id="tab-all" class="tab-btn px-5 py-2.5 rounded-full font-bold text-sm bg-brandGreen-800 text-white shadow-md transition-all">
+                அனைத்தும் (<span id="count-all">6</span>)
+            </button>
+            <button onclick="filterProfiles('groom')" id="tab-groom" class="tab-btn px-5 py-2.5 rounded-full font-bold text-sm bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 transition-all">
+                <i class="fa-solid fa-mars text-blue-600 mr-1.5"></i>மணமகன்கள்
+            </button>
+            <button onclick="filterProfiles('bride')" id="tab-bride" class="tab-btn px-5 py-2.5 rounded-full font-bold text-sm bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 transition-all">
+                <i class="fa-solid fa-venus text-pink-600 mr-1.5"></i>மணமகள்கள்
+            </button>
+            <button onclick="filterProfiles('agri')" id="tab-agri" class="tab-btn px-5 py-2.5 rounded-full font-bold text-sm bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 transition-all">
+                <i class="fa-solid fa-wheat-awn text-amber-600 mr-1.5"></i>விவசாய குடும்பங்கள்
+            </button>
+        </div>
+
+        <!-- PROFILE CARDS CONTAINER -->
+        <div id="profileGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Profile cards will be populated dynamically via JavaScript -->
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US (ஏன் உழவன் மேட்ரிமனி?) -->
+    <section id="why-us" class="py-16 bg-white border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brandGold-dark font-bold text-sm uppercase tracking-wider">எங்களின் சிறப்பம்சங்கள்</span>
+                <h2 class="text-3xl font-extrabold text-brandGreen-900 sm:text-4xl mt-1">ஏன் உழவன் மேட்ரிமனி?</h2>
+                <div class="w-20 h-1 bg-brandGold mx-auto my-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="p-6 bg-creamBg rounded-2xl border border-brandGold/30 shadow-sm hover:shadow-md transition-all text-center group">
+                    <div class="w-16 h-16 bg-brandGreen-800 text-brandGold rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl group-hover:scale-110 transition-transform shadow">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandGreen-900 mb-2">100% சரிபார்க்கப்பட்டது</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">அனைத்து சுயவிவரங்களும் தொலைபேசி மற்றும் முகவரி மூலம் நேரில் உறுதி செய்யப்படுகின்றன.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-6 bg-creamBg rounded-2xl border border-brandGold/30 shadow-sm hover:shadow-md transition-all text-center group">
+                    <div class="w-16 h-16 bg-brandGreen-800 text-brandGold rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl group-hover:scale-110 transition-transform shadow">
+                        <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandGreen-900 mb-2">விவசாயத்திற்கு முன்னுரிமை</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">விவசாயப் பின்னணி கொண்ட குடும்பங்களுக்கு சிறப்பு முன்னுரிமையும் சலுகைகளும் வழங்கப்படுகின்றன.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-6 bg-creamBg rounded-2xl border border-brandGold/30 shadow-sm hover:shadow-md transition-all text-center group">
+                    <div class="w-16 h-16 bg-brandGreen-800 text-brandGold rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl group-hover:scale-110 transition-transform shadow">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandGreen-900 mb-2">பாதுகாப்பான தரவுகள்</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">உங்களின் புகைப்படங்கள் மற்றும் தனிப்பட்ட விவரங்கள் முழுமையான பாதுகாப்புடன் பராமரிக்கப்படும்.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="p-6 bg-creamBg rounded-2xl border border-brandGold/30 shadow-sm hover:shadow-md transition-all text-center group">
+                    <div class="w-16 h-16 bg-brandGreen-800 text-brandGold rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl group-hover:scale-110 transition-transform shadow">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandGreen-900 mb-2">எளிமையான கட்டணம்</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">அனைத்துத் தரப்பு மக்களுக்கும் ஏற்ற மிகக் குறைந்த மற்றும் நியாயமான கட்டணத் திட்டங்கள்.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUCCESS STORIES (வெற்றிக் கதைகள்) -->
+    <section id="success-stories" class="py-16 bg-creamBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brandGold-dark font-bold text-sm uppercase tracking-wider">மகிழ்ச்சியான ஜோடிகள்</span>
+                <h2 class="text-3xl font-extrabold text-brandGreen-900 sm:text-4xl mt-1">எங்களின் வெற்றி கதைகள்</h2>
+                <div class="w-20 h-1 bg-brandGold mx-auto my-3 rounded-full"></div>
+                <p class="text-gray-600">உழவன் மேட்ரிமனி மூலம் ஒன்றிணைந்த சில தம்பதிகளின் வாழ்த்துரைகள்</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Story 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-brandGold/30 flex flex-col">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=600" alt="Couple 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 bg-brandGold text-brandGreen-dark font-extrabold text-xs px-3 py-1 rounded-full shadow">
+                            ஈரோடு
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-gray-600 italic text-sm mb-4">
+                            "விவசாயக் குடும்பத்தைச் சேர்ந்த எங்களுக்கு ஏற்ற பொருத்தமான வரன் அமைவது கடினமாக இருந்தது. உழவன் மேட்ரிமனி மூலம் ஒரே மாதத்தில் நல்ல வரன் அமைந்தது."
+                        </p>
+                        <div>
+                            <h4 class="font-bold text-brandGreen-900 text-lg">கார்த்திக் & பிரியா</h4>
+                            <p class="text-xs text-gray-500">திருமண நாள்: ஜனவரி 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-brandGold/30 flex flex-col">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=600" alt="Couple 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 bg-brandGold text-brandGreen-dark font-extrabold text-xs px-3 py-1 rounded-full shadow">
+                            கோவை
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-gray-600 italic text-sm mb-4">
+                            "கட்டணம் மிகவும் குறைவு, சேவை மிகச் சிறப்பானது. கனிவான வாடிக்கையாளர் சேவைக்கு எனது மனமார்ந்த நன்றிகள்!"
+                        </p>
+                        <div>
+                            <h4 class="font-bold text-brandGreen-900 text-lg">சரவணன் & திவ்யா</h4>
+                            <p class="text-xs text-gray-500">திருமண நாள்: மார்ச் 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-brandGold/30 flex flex-col">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1609234656388-0ff363383899?auto=format&fit=crop&q=80&w=600" alt="Couple 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 bg-brandGold text-brandGreen-dark font-extrabold text-xs px-3 py-1 rounded-full shadow">
+                            சேலம்
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-gray-600 italic text-sm mb-4">
+                            "100% நம்பகமான தளம். வரன்களின் விவரங்கள் அனைத்தும் மிகத் துல்லியமாக சரிபார்க்கப்பட்டுள்ளன."
+                        </p>
+                        <div>
+                            <h4 class="font-bold text-brandGreen-900 text-lg">ரமேஷ் & கவிதா</h4>
+                            <p class="text-xs text-gray-500">திருமண நாள்: மே 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEMBERSHIP PLANS (கட்டணத் திட்டங்கள்) -->
+    <section id="pricing" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brandGold-dark font-bold text-sm uppercase tracking-wider">உறுப்பினர் திட்டங்கள்</span>
+                <h2 class="text-3xl font-extrabold text-brandGreen-900 sm:text-4xl mt-1">எளிமையான கட்டணத் திட்டங்கள்</h2>
+                <div class="w-20 h-1 bg-brandGold mx-auto my-3 rounded-full"></div>
+                <p class="text-gray-600">உங்களின் தேவைக்கேற்ப சிறந்த திட்டத்தை தேர்ந்தெடுங்கள்</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Basic Plan -->
+                <div class="border-2 border-gray-200 rounded-2xl p-6 bg-white hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">ஆரம்ப திட்டம்</h3>
+                        <p class="text-xs text-gray-500 mb-4">சுயவிவரப் பதிவிற்கு மட்டும்</p>
+                        <div class="text-3xl font-black text-brandGreen-900 mb-6">இலவசம்</div>
+                        <ul class="space-y-3 text-xs text-gray-600 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> சுயவிவர பதிவு</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> வரன்களை பார்க்க</li>
+                            <li class="flex items-center gap-2 text-gray-400"><i class="fa-solid fa-xmark"></i> தொலைபேசி எண் பார்வை</li>
+                            <li class="flex items-center gap-2 text-gray-400"><i class="fa-solid fa-xmark"></i> நேரடி அரட்டை (Chat)</li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleModal('registerModal')" class="w-full py-2.5 border-2 border-brandGreen-800 text-brandGreen-800 font-bold rounded-xl hover:bg-brandGreen-50 transition-colors">
+                        இலவசமாக சேர
+                    </button>
+                </div>
+
+                <!-- Silver Plan -->
+                <div class="border-2 border-gray-200 rounded-2xl p-6 bg-white hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">வெள்ளி திட்டம்</h3>
+                        <p class="text-xs text-gray-500 mb-4">3 மாத கால அளவு</p>
+                        <div class="text-3xl font-black text-brandGreen-900 mb-6">₹999 <span class="text-xs font-normal text-gray-500">/ 3 மாதம்</span></div>
+                        <ul class="space-y-3 text-xs text-gray-600 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> 25 வரன்களின் தொடர்பு எண்</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> வரன்களுக்கு விருப்பம் அனுப்ப</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> SMS அறிவிப்புகள்</li>
+                            <li class="flex items-center gap-2 text-gray-400"><i class="fa-solid fa-xmark"></i> தனிப்பட்ட ஆலோசகர்</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectPlan('வெள்ளி திட்டம்')" class="w-full py-2.5 bg-brandGreen-800 text-white font-bold rounded-xl hover:bg-brandGreen-900 transition-colors">
+                        தேர்வு செய்க
+                    </button>
+                </div>
+
+                <!-- Gold Plan (Popular) -->
+                <div class="border-2 border-brandGold rounded-2xl p-6 bg-gradient-to-b from-amber-50/50 to-white hover:shadow-2xl transition-all relative flex flex-col justify-between transform lg:-translate-y-2">
+                    <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-brandGold to-amber-500 text-brandGreen-dark font-extrabold text-xs px-4 py-1 rounded-full shadow">
+                        மிகவும் பிரபலம்
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-brandGreen-900 mb-2 mt-2">தங்கம் திட்டம்</h3>
+                        <p class="text-xs text-gray-500 mb-4">6 மாத கால அளவு</p>
+                        <div class="text-3xl font-black text-brandGreen-900 mb-6">₹1,999 <span class="text-xs font-normal text-gray-500">/ 6 மாதம்</span></div>
+                        <ul class="space-y-3 text-xs text-gray-700 font-medium mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGold"></i> 60 வரன்களின் தொடர்பு எண்</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGold"></i> வரன்களுக்கு விருப்பம் அனுப்ப</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGold"></i> ஜாதகப் பொருத்தம் பார்க்க</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGold"></i> WhatsApp உதவிச் சேவை</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectPlan('தங்கம் திட்டம்')" class="w-full py-3 bg-gradient-to-r from-brandGold to-amber-500 text-brandGreen-dark font-extrabold rounded-xl hover:shadow-lg transition-all">
+                        தேர்வு செய்க
+                    </button>
+                </div>
+
+                <!-- Platinum Plan -->
+                <div class="border-2 border-gray-200 rounded-2xl p-6 bg-white hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">பிளாட்டினம் திட்டம்</h3>
+                        <p class="text-xs text-gray-500 mb-4">திருமணம் முடியும் வரை</p>
+                        <div class="text-3xl font-black text-brandGreen-900 mb-6">₹3,499 <span class="text-xs font-normal text-gray-500">/ அன்லிமிடெட்</span></div>
+                        <ul class="space-y-3 text-xs text-gray-600 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> வரம்பற்ற தொடர்பு எண்கள்</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> தனிப்பட்ட மேரேஜ் ஆலோசகர்</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> முதல் முன்னுரிமை விளம்பரம்</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> வரன் வீடு சென்று சரிபார்த்தல்</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectPlan('பிளாட்டினம் திட்டம்')" class="w-full py-2.5 bg-brandGreen-800 text-white font-bold rounded-xl hover:bg-brandGreen-900 transition-colors">
+                        தேர்வு செய்க
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-brandGreen-dark text-white border-t-4 border-brandGold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                
+                <!-- Col 1: About -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <span class="text-2xl font-bold text-brandGold">உழவன் MATRIMONY</span>
+                    </div>
+                    <p class="text-xs text-emerald-100 leading-relaxed">
+                        விவசாய பெருமக்களின் குடும்பங்களுக்கும் நல் உள்ளங்களுக்கும் நம்பிக்கையான வரன்களைக் கண்டறிய உருவாக்கப்பட்ட முதன்மை திருமணத் தகவல் மையம்.
+                    </p>
+                    <div class="flex gap-3 text-lg text-brandGold">
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-brandGold hover:text-brandGreen-dark transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-brandGold hover:text-brandGreen-dark transition-all"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-brandGold hover:text-brandGreen-dark transition-all"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-brandGold hover:text-brandGreen-dark transition-all"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-base font-bold text-brandGold mb-4 border-b border-emerald-800/60 pb-2">முக்கிய இணைப்புகள்</h4>
+                    <ul class="space-y-2 text-xs text-emerald-100">
+                        <li><a href="#home" class="hover:text-brandGold">முகப்பு</a></li>
+                        <li><a href="#search" class="hover:text-brandGold">வரன் தேடுக</a></li>
+                        <li><a href="#why-us" class="hover:text-brandGold">ஏன் உழவன் மேட்ரிமனி?</a></li>
+                        <li><a href="#success-stories" class="hover:text-brandGold">வெற்றிக் கதைகள்</a></li>
+                        <li><a href="#pricing" class="hover:text-brandGold">கட்டண விவரம்</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Policy Links -->
+                <div>
+                    <h4 class="text-base font-bold text-brandGold mb-4 border-b border-emerald-800/60 pb-2">விதிமுறைகள்</h4>
+                    <ul class="space-y-2 text-xs text-emerald-100">
+                        <li><a href="#" class="hover:text-brandGold">தனியுரிமைக் கொள்கை (Privacy Policy)</a></li>
+                        <li><a href="#" class="hover:text-brandGold">விதிமுறைகள் & நிபந்தனைகள்</a></li>
+                        <li><a href="#" class="hover:text-brandGold">பாதுகாப்பு குறிப்புகள்</a></li>
+                        <li><a href="#" class="hover:text-brandGold">உதவி மையம் / FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Info -->
+                <div>
+                    <h4 class="text-base font-bold text-brandGold mb-4 border-b border-emerald-800/60 pb-2">தொடர்பு கொள்ள</h4>
+                    <ul class="space-y-3 text-xs text-emerald-100">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-location-dot text-brandGold mt-0.5"></i>
+                            <span>தலைமை அலுவலகம்: பெருந்துறை சாலை, ஈரோடு - 638011, தமிழ்நாடு.</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-brandGold"></i>
+                            <span>+91 98765 43210 / 0424 223344</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-brandGold"></i>
+                            <span>support@uzhavanmatrimony.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-emerald-800/80 pt-6 text-center text-xs text-emerald-200/80 flex flex-col sm:flex-row justify-between items-center gap-2">
+                <p>© 2026 உழவன் MATRIMONY. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
+                <p>உழவன் மேட்ரிமனி - விவசாய குடும்பங்களின் நம்பிக்கையான தளம்</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL: REGISTRATION (இலவச பதிவு) -->
+    <div id="registerModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto custom-scrollbar p-6 sm:p-8 relative shadow-2xl border-2 border-brandGold">
+            <!-- Close Button -->
+            <button onclick="toggleModal('registerModal')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-xl font-bold p-1">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 bg-brandGreen-800 text-brandGold rounded-full flex items-center justify-center mx-auto mb-2 text-xl">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-brandGreen-900">இலவச பதிவு செய்க</h3>
+                <p class="text-xs text-gray-500">உங்கள் கணக்கை உருவாக்கி பொருத்தமான வரனை தேடுங்கள்</p>
+            </div>
+
+            <form onsubmit="handleRegistration(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase mb-1">யாருகாக பதிவு செய்கிறீர்கள்?</label>
+                    <select class="w-full bg-gray-50 border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-brandGreen-800 outline-none" required>
+                        <option value="self">எனக்காக</option>
+                        <option value="son">எனது மகனுக்கு</option>
+                        <option value="daughter">எனது மகளுக்கு</option>
+                        <option value="brother">எனது சகோதரனுக்கு</option>
+                        <option value="sister">எனது சகோதரிக்கு</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase mb-1">முழு பெயர்</label>
+                    <input type="text" placeholder="உங்கள் பெயரை உள்ளிடவும்" class="w-full bg-gray-50 border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-brandGreen-800 outline-none" required>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">பாலினம்</label>
+                        <select class="w-full bg-gray-50 border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-brandGreen-800 outline-none" required>
+                            <option value="male">ஆண் (மணமகன்)</option>
+                            <option value="female">பெண் (மணமகள்)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">பிறந்த தேதி</label>
+                        <input type="date" class="w-full bg-gray-50 border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-brandGreen-800 outline-none" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase mb-1">கைபேசி எண் (Mobile Number)</label>
+                    <input type="tel" placeholder="10 இலக்க தொலைபேசி எண்" pattern="[0-9]{10}" class="w-full bg-gray-50 border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-brandGreen-800 outline-none" required>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase mb-1">கல்வி மற்றும் தொழில்</label>
+                    <input type="text" placeholder="எ.கா: B.E, மென்பொருள் பொறியாளர்" class="w-full bg-gray-50 border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-brandGreen-800 outline-none" required>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase mb-1">விவசாய விவரங்கள் (இருப்பதாக இருந்தால்)</label>
+                    <input type="text" placeholder="எ.கா: நஞ்சை நிலம் 5 ஏக்கர், தென்னை தோட்டம்" class="w-full bg-gray-50 border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-brandGreen-800 outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase mb-1">மாவட்டத்தை தேர்ந்தெடுக்கவும்</label>
+                    <select class="w-full bg-gray-50 border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-brandGreen-800 outline-none" required>
+                        <option value="">மாவட்டத்தை தேர்வு செய்க</option>
+                        <option value="ஈரோடு">ஈரோடு</option>
+                        <option value="கோவை">கோயம்புத்தூர்</option>
+                        <option value="சேலம்">சேலம்</option>
+                        <option value="திருப்பூர்">திருப்பூர்</option>
+                        <option value="நாமக்கல்">நாமக்கல்</option>
+                        <option value="மதுரை">மதுரை</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-brandGold to-amber-500 text-brandGreen-dark font-extrabold py-3 rounded-lg shadow-md hover:shadow-lg transition-all text-base mt-2">
+                    உடனே பதிவு செய்
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL: LOGIN (உள்நுழைக) -->
+    <div id="loginModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 sm:p-8 relative shadow-2xl border-2 border-brandGold">
+            <!-- Close Button -->
+            <button onclick="toggleModal('loginModal')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-xl font-bold p-1">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 bg-brandGreen-800 text-brandGold rounded-full flex items-center justify-center mx-auto mb-2 text-xl">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-brandGreen-900">கணக்கில் உள்நுழைக</h3>
+                <p class="text-xs text-gray-500">பதிவு செய்த தொலைபேசி எண் மூலம் உள்நுழையவும்</p>
+            </div>
+
+            <form onsubmit="handleLogin(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase mb-1">கைபேசி எண் / பயனர் ஐடி</label>
+                    <input type="text" placeholder="உங்கள் கைபேசி எண்" class="w-full bg-gray-50 border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-brandGreen-800 outline-none" required>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase mb-1">கடவுச்சொல் (Password) / OTP</label>
+                    <input type="password" placeholder="கடவுச்சொல் உள்ளிடவும்" class="w-full bg-gray-50 border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-brandGreen-800 outline-none" required>
+                </div>
+
+                <div class="flex justify-between items-center text-xs">
+                    <label class="flex items-center gap-1.5 cursor-pointer">
+                        <input type="checkbox" class="accent-brandGreen-800">
+                        <span>நினைவில் கொள்க</span>
+                    </label>
+                    <a href="#" class="text-brandGreen-800 font-bold hover:underline">கடவுச்சொல் மறந்ததா?</a>
+                </div>
+
+                <button type="submit" class="w-full bg-brandGreen-800 hover:bg-brandGreen-900 text-white font-extrabold py-3 rounded-lg shadow-md transition-all text-base mt-2">
+                    உள்நுழைக
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL: VIEW PROFILE DETAILS -->
+    <div id="profileModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto custom-scrollbar p-6 relative shadow-2xl border-2 border-brandGold">
+            <button onclick="toggleModal('profileModal')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-xl font-bold p-1">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div id="profileModalContent">
+                <!-- Dynamically filled with JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTIFICATION TOAST -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-brandGreen-900 text-white border-2 border-brandGold px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3 transform translate-y-20 opacity-0 transition-all duration-300 z-50">
+        <i id="toastIcon" class="fa-solid fa-circle-check text-brandGold text-xl"></i>
+        <span id="toastMessage" class="text-sm font-semibold">செயல்பாடு வெற்றி பெற்றது!</span>
+    </div>
+
+    <!-- JAVASCRIPT CODE -->
+    <script>
+        // MOCK PROFILES DATA
+        const profiles = [
+            {
+                id: "UZH101",
+                name: "கார்த்திகேயன் M",
+                gender: "groom",
+                age: 28,
+                height: "5' 10\"",
+                education: "B.E (Mechanical)",
+                occupation: "மென்பொருள் பொறியாளர் & விவசாயம்",
+                location: "ஈரோடு",
+                agriBackground: true,
+                agriDetails: "தோட்டம் & நஞ்சை 8 ஏக்கர்",
+                caste: "கொங்கு வேளாளர்",
+                photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+                about: "இயற்கை விவசாயத்தில் ஆர்வமும், மென்பொருள் துறையில் அனுபவமும் கொண்ட எளிமையான மனிதர்."
+            },
+            {
+                id: "UZH102",
+                name: "சௌமியா R",
+                gender: "bride",
+                age: 24,
+                height: "5' 4\"",
+                education: "M.Sc (Agriculture)",
+                occupation: "விவசாய அதிகாரி (Govt)",
+                location: "கோவை",
+                agriBackground: true,
+                agriDetails: "தென்னை தோட்டம் 5 ஏக்கர்",
+                caste: "கவுண்டர்",
+                photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400",
+                about: "பாரம்பரிய குடும்பப் பின்னணி கொண்ட அன்பான, பண்பான பெண்."
+            },
+            {
+                id: "UZH103",
+                name: "பிரவீன் குமார்",
+                gender: "groom",
+                age: 30,
+                height: "5' 8\"",
+                education: "B.Sc (Agri)",
+                occupation: "இயற்கை விவசாயி & பண்ணை உரிமையாளர்",
+                location: "சேலம்",
+                agriBackground: true,
+                agriDetails: "சொந்த பண்ணை 12 ஏக்கர்",
+                caste: "வன்னியர்",
+                photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400",
+                about: "விவசாயத்தை தொழிலாக மட்டுமின்றி வாழ்வியலாக வாழும் ஆர்வலர்."
+            },
+            {
+                id: "UZH104",
+                name: "தீபிகா S",
+                gender: "bride",
+                age: 26,
+                height: "5' 5\"",
+                education: "B.Tech (IT)",
+                occupation: "சிஸ்டம் அனாலலிஸ்ட்",
+                location: "திருப்பூர்",
+                agriBackground: false,
+                agriDetails: "விவசாய குடும்ப பின்னணி இல்லை",
+                caste: "நாடார்",
+                photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400",
+                about: "குடும்பத்தின் மூத்த பெண், பாரம்பரியத்தையும் நவீனத்துவத்தையும் விரும்பபவர்."
+            },
+            {
+                id: "UZH105",
+                name: "விஜயராகவன் K",
+                gender: "groom",
+                age: 29,
+                height: "6' 0\"",
+                education: "MBA",
+                occupation: "தொழிலதிபர் (Agri Export)",
+                location: "மதுரை",
+                agriBackground: true,
+                agriDetails: "விவசாய நிலம் 15 ஏக்கர்",
+                caste: "தேவர் / மு his தொளிர்பாளர்",
+                photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400",
+                about: "விவசாயப் பொருட்களை ஏற்றுமதி செய்யும் தொழிலதிபர்."
+            },
+            {
+                id: "UZH106",
+                name: "அபிராமி N",
+                gender: "bride",
+                age: 25,
+                height: "5' 3\"",
+                education: "B.Com, CA Inter",
+                occupation: "ஆடிட்டர்",
+                location: "நாமக்கல்",
+                agriBackground: true,
+                agriDetails: "நஞ்சை நிலம் 4 ஏக்கர்",
+                caste: "முத்துராஜா",
+                photo: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=400",
+                about: "பண்பான மற்றும் அமைதியான குணமுடைய பெண்."
+            }
+        ];
+
+        // RENDER PROFILES TO GRID
+        function renderProfiles(items) {
+            const grid = document.getElementById('profileGrid');
+            grid.innerHTML = '';
+
+            if(items.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-12 bg-white rounded-2xl border border-gray-200">
+                        <i class="fa-solid fa-user-slash text-4xl text-gray-300 mb-3"></i>
+                        <p class="text-gray-500 font-bold">துரதிர்ஷ்டவசமாக இந்த தேடலில் வரன்கள் எதுவும் கிடைக்கவில்லை.</p>
+                        <p class="text-xs text-gray-400 mt-1">வேறொரு மாவட்டத்தையோ அல்லது வயது வரம்பையோ தேர்வு செய்து பார்க்கவும்.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            items.forEach(profile => {
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-brandGold/30 flex flex-col justify-between group";
+                
+                card.innerHTML = `
+                    <div>
+                        <!-- Profile Image Header -->
+                        <div class="relative h-64 overflow-hidden bg-gray-100">
+                            <img src="${profile.photo}" alt="${profile.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                            
+                            <!-- Badges -->
+                            <div class="absolute top-3 left-3 bg-brandGreen-dark/90 backdrop-blur-md text-amber-300 text-xs font-bold px-2.5 py-1 rounded-full border border-brandGold/40">
+                                ID: ${profile.id}
+                            </div>
+
+                            ${profile.agriBackground ? `
+                                <div class="absolute top-3 right-3 bg-gradient-to-r from-amber-500 to-brandGold text-brandGreen-dark text-xs font-extrabold px-2.5 py-1 rounded-full shadow">
+                                    <i class="fa-solid fa-wheat-awn mr-1"></i>விவசாயக் குடும்பம்
+                                </div>
+                            ` : ''}
+
+                            <div class="absolute bottom-3 left-4 right-4 text-white">
+                                <h3 class="text-xl font-bold flex items-center justify-between">
+                                    <span>${profile.name}</span>
+                                    <span class="text-sm font-normal text-amber-300">${profile.age} வயது</span>
+                                </h3>
+                                <p class="text-xs text-gray-200 flex items-center gap-1 mt-0.5">
+                                    <i class="fa-solid fa-location-dot text-brandGold"></i> ${profile.location} | ${profile.height}
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Profile Info Details -->
+                        <div class="p-5 space-y-2.5 text-xs text-gray-700">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-graduation-cap text-brandGreen-800 w-4 text-center"></i>
+                                <span class="font-bold text-gray-800">கல்வி:</span>
+                                <span>${profile.education}</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-briefcase text-brandGreen-800 w-4 text-center"></i>
+                                <span class="font-bold text-gray-800">தொழில்:</span>
+                                <span>${profile.occupation}</span>
+                            </div>
+                            ${profile.agriBackground ? `
+                            <div class="flex items-center gap-2 text-amber-900 bg-amber-50 p-2 rounded-lg border border-amber-200">
+                                <i class="fa-solid fa-tractor text-brandGold w-4 text-center"></i>
+                                <span class="font-bold">நிலம்:</span>
+                                <span>${profile.agriDetails}</span>
+                            </div>
+                            ` : ''}
+                        </div>
+                    </div>
+
+                    <!-- Card Actions -->
+                    <div class="p-4 bg-gray-50 border-t border-gray-100 flex gap-2">
+                        <button onclick="viewProfileDetails('${profile.id}')" class="flex-1 py-2 bg-white border-2 border-brandGreen-800 text-brandGreen-800 hover:bg-brandGreen-50 font-bold rounded-lg transition-colors text-xs text-center">
+                            விவரங்கள் பார்க்க
+                        </button>
+                        <button onclick="sendInterest('${profile.name}')" class="py-2 px-3 bg-brandGold hover:bg-amber-500 text-brandGreen-dark font-extrabold rounded-lg shadow transition-all text-xs flex items-center justify-center gap-1" title="விருப்பம் அனுப்ப">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // FILTER PROFILES BY TAB
+        function filterProfiles(category) {
+            // Update Active Tab Button Styles
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.className = "tab-btn px-5 py-2.5 rounded-full font-bold text-sm bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 transition-all";
+            });
+
+            const activeBtn = document.getElementById(`tab-${category}`);
+            if(activeBtn) {
+                activeBtn.className = "tab-btn px-5 py-2.5 rounded-full font-bold text-sm bg-brandGreen-800 text-white shadow-md transition-all";
+            }
+
+            if(category === 'all') {
+                renderProfiles(profiles);
+            } else if(category === 'groom' || category === 'bride') {
+                renderProfiles(profiles.filter(p => p.gender === category));
+            } else if(category === 'agri') {
+                renderProfiles(profiles.filter(p => p.agriBackground === true));
+            }
+        }
+
+        // HERO FORM SEARCH LOGIC
+        function handleHeroSearch(event) {
+            event.preventDefault();
+            const gender = document.querySelector('input[name="searchGender"]:checked').value;
+            const district = document.getElementById('searchDistrict').value;
+            const agriOnly = document.getElementById('agriOnly').checked;
+
+            let filtered = profiles.filter(p => p.gender === gender);
+
+            if(district !== 'all') {
+                filtered = filtered.filter(p => p.location.includes(district));
+            }
+
+            if(agriOnly) {
+                filtered = filtered.filter(p => p.agriBackground === true);
+            }
+
+            renderProfiles(filtered);
+
+            // Scroll down smoothly to search results
+            document.getElementById('search').scrollIntoView({ behavior: 'smooth' });
+            showToast(`தேடல் முடிவுகள் புதுப்பிக்கப்பட்டன (${filtered.length} வரன்கள் உள்ளன)`);
+        }
+
+        // VIEW PROFILE DETAILS IN MODAL
+        function viewProfileDetails(id) {
+            const profile = profiles.find(p => p.id === id);
+            if(!profile) return;
+
+            const modalContent = document.getElementById('profileModalContent');
+            modalContent.innerHTML = `
+                <div class="text-center sm:text-left grid grid-cols-1 sm:grid-cols-12 gap-6 items-center">
+                    <div class="sm:col-span-5">
+                        <img src="${profile.photo}" alt="${profile.name}" class="w-full h-64 sm:h-80 object-cover rounded-2xl shadow-lg border-2 border-brandGold">
+                    </div>
+                    <div class="sm:col-span-7 space-y-3">
+                        <span class="bg-brandGold/20 text-brandGreen-900 font-bold px-3 py-1 rounded-full text-xs border border-brandGold">ஐடி: ${profile.id}</span>
+                        <h3 class="text-2xl font-extrabold text-brandGreen-900">${profile.name}</h3>
+                        <p class="text-sm text-gray-500">${profile.age} வயது | ${profile.height} | ${profile.location}</p>
+
+                        <div class="border-t border-b border-gray-200 py-3 space-y-2 text-xs text-gray-700">
+                            <p><strong>கல்வி:</strong> ${profile.education}</p>
+                            <p><strong>தொழில்:</strong> ${profile.occupation}</p>
+                            <p><strong>சாதி/பிரிவு:</strong> ${profile.caste}</p>
+                            ${profile.agriBackground ? `<p class="text-amber-800 font-bold"><i class="fa-solid fa-wheat-awn mr-1"></i> <strong>விவசாய விவரம்:</strong> ${profile.agriDetails}</p>` : ''}
+                        </div>
+
+                        <p class="text-xs text-gray-600 italic">"${profile.about}"</p>
+
+                        <div class="pt-2 flex gap-3">
+                            <button onclick="sendInterest('${profile.name}')" class="flex-1 py-2.5 bg-gradient-to-r from-brandGold to-amber-500 text-brandGreen-dark font-extrabold rounded-lg shadow hover:shadow-md transition-all text-sm">
+                                <i class="fa-solid fa-heart mr-1.5"></i>விருப்பம் அனுப்ப
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            toggleModal('profileModal');
+        }
+
+        // MODAL TOGGLE HELPER
+        function toggleModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if(modal) {
+                modal.classList.toggle('hidden');
+            }
+        }
+
+        // SELECT PLAN
+        function selectPlan(planName) {
+            toggleModal('registerModal');
+            showToast(`${planName} தேர்ந்தெடுக்கப்பட்டது! பதிவை பூர்த்தி செய்யவும்.`);
+        }
+
+        // SEND INTEREST ACTION
+        function sendInterest(name) {
+            showToast(`${name} அவர்களுக்கு உங்கள் விருப்ப அறிவிப்பு அனுப்பப்பட்டது!`);
+        }
+
+        // LOGIN SUBMIT
+        function handleLogin(e) {
+            e.preventDefault();
+            toggleModal('loginModal');
+            showToast('வெற்றிகரமாக உள்நுழைந்துவிட்டீர்கள்!');
+        }
+
+        // REGISTRATION SUBMIT
+        function handleRegistration(e) {
+            e.preventDefault();
+            toggleModal('registerModal');
+            showToast('பதிவு வெற்றிகரமாக முடிந்தது! விரைவில் உங்களைத் தொடர்பு கொள்கிறோம்.');
+        }
+
+        // TOAST NOTIFICATION HANDLER
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+            
+            toastMessage.textContent = message;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3500);
+        }
+
+        // MOBILE MENU TOGGLE
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // INITIALIZE PAGE CONTENT
+        window.onload = function() {
+            renderProfiles(profiles);
+        };
+    </script>
+</body>
+</html>
